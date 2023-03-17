@@ -1,0 +1,320 @@
+/* Configuración de REMS */
+html {
+    font-size: 62.5%; /**? Reset para REMS - 62.5%  = 10px de 16px **/
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/* Temporales */
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+    font-size: 1.5rem;
+    line-height: 2;
+}
+/* Globales */
+.contenedor {
+    max-width: 115rem;
+    margin: 0 auto;
+}
+h1{
+    font-size: 3.6rem;
+}
+h2{
+    font-size: 3.3rem;
+}
+h3 {
+    font-size: 3rem;
+}
+h4{
+    font-size: 2.6rem;
+}
+img{
+    max-width: 100%;
+}
+/* Utilidades */
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.fw-300{
+    font-weight: 300;
+}
+.text-center{
+    text-align: center;
+}
+.d-block{
+    display: block!important;
+}
+.contenidos-center{
+    max-width: 80rem;
+}
+/* Botones */
+.button{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.5rem 3rem;
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
+}
+.orange-button{
+    background-color: brown;
+}
+.green-button{
+    background-color: #1a154e;
+    border: solid 2px #1a154e;
+    transition: all ease-in-out 0.5s;
+}
+/** Header **/
+.site-header{
+    background-color: #0e0b30;
+    padding: 1rem 0 3rem 0;
+}
+.site-header.inicio{
+    background-image: url(../img/header_1.png);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 60rem;
+}
+/** nav **/
+.contenido-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: inherit;
+}
+.contenido-header h1{
+    color: white;
+    padding-bottom: 2rem;
+    max-width: 50rem;
+    line-height: 2;
+    transition: all ease-in-out 0.5s;
+}
+.contenido-header h1:hover{
+    text-shadow: rgba(148, 212, 255,0.5) 1px 0 30px;
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+}
+.logo{
+    max-width: 35.4rem;
+    width: fit-content;
+}
+.logo img{
+    object-fit: cover;
+}
+.navegacion a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin-right: 2rem;
+}
+.navegacion a:last-of-type{
+    margin-right: 0;
+}
+.navegacion a:hover{
+    color: brown;
+}
+/**Iconos Nosotros **/
+.iconos-nosotros{
+    display: flex;
+    justify-content: space-between;
+}
+.icono{
+    flex-basis: calc(33.3% - 2rem);
+    text-align: center;
+}
+.icono h3{
+    text-transform: capitalize;
+}
+/**Catálogo**/
+.contenedor-targets{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.target {
+    flex: 0 0 calc(33% - 2rem);
+    border: 1px solid #b5b5b5;
+    background-color: #f5f5f5;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.portada-target{
+    min-height: 250px;
+    max-height: 260px;
+    height: 100%;
+}
+.portada-target img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+.img-target{
+    flex-basis: 50%;
+}
+.img-target img{
+    display: block;
+    height:100%;
+
+}
+.contenido-target{
+    flex-basis: 50%;
+    padding: 2rem;
+}
+.contenido-target h3{
+    margin: 0;
+    line-height: 4rem;
+}
+.contenido-target p{
+    margin: 0;
+}
+.Precio{
+    color: brown;
+    font-weight: 700;
+}
+.right-button{
+    display: flex;
+    justify-content: flex-end;
+}
+.center-button{
+    display: flex;
+    justify-content: center;
+}
+/** Contacto */
+.contact{
+    background-image: url(../img/encuentra.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 35rem;
+    display: flex;
+    align-items: center;
+}
+.contenido-contact{
+    flex: 1;
+    color: white;
+}
+.contenido-contact p{
+    font-size: 1.8rem;
+}
+/*Parte Inferior */
+.parte-inferior{
+    display: flex;
+    justify-content: space-between;
+}
+/** Blog **/
+.parte-inferior .blog{
+    flex-basis: 60%;
+}
+.Entrada-blog{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+.Entrada-blog:last-of-type{
+    margin-bottom: 0;
+}
+.Entrada-blog .blog-img{
+    flex-basis: 40%;
+    max-height: 25rem;
+}
+.blog-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.Entrada-blog .contenido-blog{
+    flex-basis: calc(60% - 3rem);
+}
+.contenido-blog h4{
+    margin: 0;
+    line-height: 1.4;
+}
+.contenido-blog h4::after{
+    content: '';
+    display: block;
+    width: 15rem;
+    height: 0.5rem;
+    background-color: brown;
+    margin-top: 0.1rem;
+}
+.contenido-blog a{
+    color: black;
+    text-decoration: none;
+}
+.contenido-blog span{
+    color: #1a154e;
+}
+/** Testimoniales **/
+.parte-inferior .testimonios{
+    flex-basis: calc(40% - 2rem);
+}
+.contenido-testimonios{
+    background-color: brown;
+    padding: 2rem;
+    border-radius: 2rem;
+    color: white;
+}
+.contenido-testimonios p{
+    text-align: right;
+}
+.testimonios blockquote::before {
+    content: '';
+    background-image: url(../img/comilla.svg);
+    background-size: cover;
+    background-position: center center;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left: -1.5rem;
+}
+.testimonios blockquote {
+    position: relative;
+    padding-left: 3rem;
+    font-weight: 300;
+}
+/** Footer **/
+
+.site-footer{
+    background-color: #0e0b30;
+    margin: 0;
+    padding: 2rem 0rem;
+}
+.contenido-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.copyright{
+    margin: 0;
+    color: #f5f5f5;
+}
+/*-------- Nosotros -----------*/
+.contenido-nosotros{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3rem;
+}
+.contenido-nosotros blockquote{
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0 3rem 0;
+}
+.imagen{
+    width: 90%;
+}
+.efecto:hover{
+    color: #1a154e;
+    background-color: #ffffff;
+}

@@ -1,0 +1,53 @@
+html {
+  background-image: url("https://www.indiewire.com/wp-content/uploads/2017/05/anne_textless_002.jpg");
+  background-size: cover;
+}
+body{
+    font-family: 'Courgette', cursive;
+    font-family: 'Satisfy', cursive;
+    background-color: rgba(0, 0, 0, 0.908);
+}
+
+#contenedor {
+  margin: auto 1em;
+  text-align: center;
+  background-size: cover;
+  height: 100vh;
+  position: fixed;
+  font-size: 60px;
+  position: revert;
+  background-color: black;
+}
+
+#titulo {
+  color: black;
+  background-color: white;
+  font-size: 50px;
+}
+#Recuerdos {
+  color: white;
+  font-size: 30px;
+  font-family: "Courgette", cursive;
+  font-family: "Satisfy", cursive;
+}
+#cont {
+  font-style: normal;
+  text-decoration: none;
+}
+.coleccion-img{
+  display: flex;
+  justify-content: space-around;
+}
+.imagenes{
+  width: 300px;
+  height: 300px;
+}
+.imagenes img{
+  height: 100%;
+  width: 100%;
+  object-fit:cover;
+}
+h1:hover{
+  color: red;
+  background-color: aquamarine;
+}
